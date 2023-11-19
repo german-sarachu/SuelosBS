@@ -6,8 +6,14 @@
   transform: scale(1.1);
 }
 
+.lista li:hover {
+  background-color: rgb(255 221 21);
+  border-radius: 20px;
+  box-shadow: 0 0 10px #141414, 0 0 20px #ececec, 0 0 20px #ddd000;
+}
+
 .carousel-inner img {
-  height: 50vh;
+  height: 65vh;
   object-fit: cover;
 }
 
@@ -74,6 +80,15 @@
   }
 }
 
-.lista li:hover {
-  background-color: rgb(255 221 21);
+.carousel-item {
+  position: relative;
+}
+.carousel-parrafo {
+  position: absolute;
+  color: #fff;
+  text-shadow: 0 0 8px #000;
+  font-weight: bold;
+  bottom: 25px;
+  left: 25px;
+  right: 25px;
 }
