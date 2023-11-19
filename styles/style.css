@@ -99,3 +99,12 @@
 .sociales-footer i:hover {
   text-shadow: 0 0 10px #141414, 0 0 20px #ececec, 0 0 20px #ddd000;
 }
+
+/*seccion nosotros*/
+.seccion-nosotros img, .aside-nosotros img {
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+.aside-nosotros span {
+  color: grey;
+}
