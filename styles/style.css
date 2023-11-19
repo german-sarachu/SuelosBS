@@ -1,6 +1,11 @@
 .header-logo {
   max-height: 70px;
+  transition: 0.4s;
 }
+.header-logo:hover {
+  transform: scale(1.1);
+}
+
 .carousel-inner img {
   height: 50vh;
   object-fit: cover;
@@ -67,4 +72,8 @@
   .contenedor-galeria img:nth-child(6) {
     grid-row-start: span 1;
   }
+}
+
+.lista li:hover {
+  background-color: rgb(255 221 21);
 }
