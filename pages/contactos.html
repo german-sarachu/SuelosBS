@@ -133,88 +133,114 @@
     </div>
     <!--letras empresa fin-->
 
-    <h3>Contacto</h3>
+    <!--formulario inicia-->
+    <h3 class="m-5 text-center">Contacto</h3>
 
-    <form class="form" action="formulario" method="post" enctype="">
-        <label for="nombre">Nombres</label>
-        <input type="text" id="nombre" name="nombre">
-
-        <label for="telefono">Telefono</label>
-        <input type="tel" id="telefono" name="telefono">
-
-        <label for="email">Correo electrónico</label>
-        <input type="email" id="email" name="email">
-
-        <label for="mensaje">Nos ayuda una explicación breve del proyecto</label>
-        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-
-        <label for="imagen">Y tal vez una imagen del lugar</label>
-        <input class="insertar-imagen" type="file" id="imagen" name="imagen" accept="image/*">
-
-        <input class="boton" type="submit" value="Enviar">
+    <form class="m-3 container d-block mx-auto" action="suelosBS" method="post" enctype="">
+      <div class="row">
+        <div class="mb-3 col-md-4">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" name="nombre" class="form-control" />
+        </div>
+        <div class="mb-3 col-md-4">
+          <label for="telefono" class="form-label">Telefono</label>
+          <input type="tel" class="form-control" />
+        </div>
+        <div class="mb-3 col-md-4">
+          <label for="mail" class="form-label">e-mail</label>
+          <input type="email" class="form-control" />
+        </div>
+        <div class="mb-3">
+          <div class="form-text mt-5">
+            Nos ayuda una explicación breve del proyecto
+          </div>
+          <textarea name="mensaje" class="form-label form-control"></textarea>
+        </div>
+        <div class="mb-3">
+          <div class="form-text">Y tal vez una imagen del lugar</div>
+          <input
+            class="form-control"
+            type="file"
+            name="imagen"
+            accept="image/*"
+          />
+        </div>
+        <button type="submit" class="btn btn-warning w-25 mx-auto my-3">Submit</button>
+      </div>
     </form>
+    <!--formulario fin-->
 
-    <h3>Nuestra ubicación</h3>
+    <!--mapa ubicacion inicia-->
+    <h3 class="m-5 text-center">Nuestra ubicación</h3>
 
-    <iframe class="contenedor mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13234.297071214569!2d-58.2767567541325!3d-33.97778045953378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2suy!4v1698576080651!5m2!1ses-419!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    
+    <iframe
+      class="container mx-auto d-block"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13234.297071214569!2d-58.2767567541325!3d-33.97778045953378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2suy!4v1698576080651!5m2!1ses-419!2suy"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <!--mapa ubicacion fin-->
+
     <!--footer inicia-->
     <footer>
-        <div class="container-fluid mt-5 bg-dark p-4 text-light">
-          <div class="row">
-            <div
-              class="col-md-3 d-flex align-items-center justify-content-center"
-            >
-              <a href="#">
-                <img
-                  src="../assets/logo-removebg-preview.png"
-                  class="header-logo footer-logo"
-                  alt="logo empresa"
-                />
-              </a>
+      <div class="container-fluid mt-5 bg-dark p-4 text-light">
+        <div class="row">
+          <div
+            class="col-md-3 d-flex align-items-center justify-content-center"
+          >
+            <a href="#">
+              <img
+                src="../assets/logo-removebg-preview.png"
+                class="header-logo footer-logo"
+                alt="logo empresa"
+              />
+            </a>
+          </div>
+          <div
+            class="col-md-4 mt-4 mb-4 d-flex flex-row justify-content-center sociales-footer"
+          >
+            <div class="social-item m-3">
+              <i class="bi bi-facebook fs-2 text-warning"></i>
             </div>
-            <div
-              class="col-md-4 mt-4 mb-4 d-flex flex-row justify-content-center sociales-footer"
-            >
-              <div class="social-item m-3">
-                <i class="bi bi-facebook fs-2 text-warning"></i>
-              </div>
-              <div class="social-item m-3">
-                <i class="bi bi-instagram fs-2 text-warning"></i>
-              </div>
-              <div class="social-item m-3">
-                <i class="bi bi-whatsapp fs-2 text-warning"></i>
-              </div>
-              <div class="social-item m-3">
-                <i class="bi bi-globe fs-2 text-warning"></i>
-              </div>
-              <div class="social-item m-3 text-warning">
-                <i class="bi bi-envelope fs-2"></i>
-              </div>
+            <div class="social-item m-3">
+              <i class="bi bi-instagram fs-2 text-warning"></i>
             </div>
-            <div
-              class="col-md-5 d-flex align-items-center justify-content-center text-center"
-            >
-              <p>
-                Calle Mortalena esquina Bolivia | Carmelo | Departamento de
-                Colonia | Uruguay
-              </p>
+            <div class="social-item m-3">
+              <i class="bi bi-whatsapp fs-2 text-warning"></i>
+            </div>
+            <div class="social-item m-3">
+              <i class="bi bi-globe fs-2 text-warning"></i>
+            </div>
+            <div class="social-item m-3 text-warning">
+              <i class="bi bi-envelope fs-2"></i>
             </div>
           </div>
+          <div
+            class="col-md-5 d-flex align-items-center justify-content-center text-center"
+          >
+            <p>
+              Calle Mortalena esquina Bolivia | Carmelo | Departamento de
+              Colonia | Uruguay
+            </p>
+          </div>
         </div>
-      </footer>
-      <!--footer fin-->
-  
-      <script
-        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-        crossorigin="anonymous"
-      ></script>
-    </body>
-  </html>
-  
+      </div>
+    </footer>
+    <!--footer fin-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -101,10 +101,21 @@
 }
 
 /*seccion nosotros*/
-.seccion-nosotros img, .aside-nosotros img {
+.seccion-nosotros img,
+.aside-nosotros img {
   width: 80%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
 .aside-nosotros span {
   color: grey;
+}
+
+/*formulario*/
+input {
+  background-color: rgba(255 221 21 0.7);
+}
+
+/*mapa*/
+iframe {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
