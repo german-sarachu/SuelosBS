@@ -111,11 +111,26 @@
 }
 
 /*formulario*/
-input {
-  background-color: rgba(255 221 21 0.7);
+.formulario {
+  background-image: url(../assets/31.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 40px 20px;
+}
+.input-formulario {
+  background-color: rgba(255, 255, 255, 0,8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  border: none;
+}
+.form-parrafo {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+.btn-formulario:hover {
+  box-shadow: 0 0 20px #ddd000;
 }
 
 /*mapa*/
-iframe {
+.mapa {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }

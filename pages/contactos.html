@@ -136,36 +136,43 @@
     <!--formulario inicia-->
     <h3 class="m-5 text-center">Contacto</h3>
 
-    <form class="m-3 container d-block mx-auto" action="suelosBS" method="post" enctype="">
+    <form
+      class="m-3 container d-block mx-auto formulario"
+      action="suelosBS"
+      method="post"
+      enctype=""
+    >
       <div class="row">
         <div class="mb-3 col-md-4">
           <label for="nombre" class="form-label">Nombre</label>
-          <input type="text" name="nombre" class="form-control" />
+          <input type="text" name="nombre" class="form-control input-formulario" />
         </div>
         <div class="mb-3 col-md-4">
           <label for="telefono" class="form-label">Telefono</label>
-          <input type="tel" class="form-control" />
+          <input type="tel" class="form-control input-formulario" />
         </div>
         <div class="mb-3 col-md-4">
           <label for="mail" class="form-label">e-mail</label>
-          <input type="email" class="form-control" />
+          <input type="email" class="form-control input-formulario" />
         </div>
         <div class="mb-3">
-          <div class="form-text mt-5">
+          <div class="form-text mt-5 bg-warning text-dark p-2 mb-1 rounded form-parrafo">
             Nos ayuda una explicación breve del proyecto
           </div>
-          <textarea name="mensaje" class="form-label form-control"></textarea>
+          <textarea name="mensaje" class="form-label form-control input-formulario"></textarea>
         </div>
         <div class="mb-3">
-          <div class="form-text">Y tal vez una imagen del lugar</div>
+          <div class="form-text bg-warning text-dark p-2 mb-1 rounded form-parrafo">Y tal vez una imagen del lugar</div>
           <input
-            class="form-control"
+            class="form-control input-formulario"
             type="file"
             name="imagen"
             accept="image/*"
           />
         </div>
-        <button type="submit" class="btn btn-warning w-25 mx-auto my-3">Submit</button>
+        <button type="submit" class="btn btn-warning w-25 mx-auto my-3 btn-formulario">
+          Submit
+        </button>
       </div>
     </form>
     <!--formulario fin-->
@@ -174,7 +181,7 @@
     <h3 class="m-5 text-center">Nuestra ubicación</h3>
 
     <iframe
-      class="container mx-auto d-block"
+      class="container mx-auto d-block mapa"
       src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13234.297071214569!2d-58.2767567541325!3d-33.97778045953378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2suy!4v1698576080651!5m2!1ses-419!2suy"
       width="600"
       height="450"
