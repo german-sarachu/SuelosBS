@@ -244,3 +244,11 @@
 .carta:hover .atras {
   transform: perspective(600px) rotateY(360deg);
 }
+
+/*carrusel*/
+.contenedor-carrusel {
+  width: 50%;
+}
+.carrusel-clientes img {
+  height: 60%;
+}
